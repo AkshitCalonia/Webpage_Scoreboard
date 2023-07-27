@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="designing.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Scoreboard</title>
+        <script src="reacts.js"></script>
+        <h1 style="text-align: center;">Welcome to Scoreboard Webpage</h1>
+
+    </head>
+    <body>
+        <header style="text-align: center; margin-bottom: 1em;">
+            <i>-- Set Up the Maximum score for each respective teams! --</i>
+            <form>
+                <input id="inp" autocomplete="on" autofocus placeholder="Type a Number..." type="text">
+                <button type="submit" class="btn btn-primary btn-sm" id="maxsub">SET</button>
+            </form>
+        </header>
+        <main>
+            <h3 id="info" style="text-align: center; margin-bottom: 1em; text-color: green;"></h3>
+            <br>
+            <table class="center">
+                <tr>
+                    <th>Team 1</th>
+                    <th>Team 2</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center;" id="sc1">0</td>
+                    <td style="text-align: center;" id="sc2">0</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-outline-success" type="button" id="b1">+1</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-outline-success" type="button" id="b2">+1</button>
+                    </td>
+                </tr>
+            </table>
+            <p id="res" style="text-align: center;"></p>
+        </main>
+        <footer style="text-align: center;">
+            <button id="reload" class="btn btn-warning">RESTART</button>
+        </footer>
+    </body>
+
+</html>
